@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 27, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Next%20Level%20Programming/M7/A7/next-portfolio-frontend/src/app/%28dashboard%29/dashboard/page.tsx"],"sourcesContent":["export default async function DashboardHome() {\n  const quote = \"The secret of getting ahead is getting started. – Mark Twain\";\n\n  // const session = await getUserSession();\n\n  return (\n    <div className=\"min-h-screen flex flex-col justify-center items-center bg-gray-50 p-6 w-full\">\n      <h1 className=\"text-4xl font-bold text-gray-800 mb-4\">\n        {/* Welcome, {session?.user?.name}! */} welcome!\n      </h1>\n      <p className=\"text-lg text-gray-600 italic text-center\">\n        {/* {session?.user?.email} */}\n        Name here\n      </p>\n      <p className=\"text-lg text-gray-600 italic text-center\">{quote}</p>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAe,eAAe;IAC5B,MAAM,QAAQ;IAEd,0CAA0C;IAE1C,qBACE,8OAAC;QAAI,WAAU;;0BACb,8OAAC;gBAAG,WAAU;0BAC2B;;;;;;0BAEzC,8OAAC;gBAAE,WAAU;0BACmB;;;;;;0BAGhC,8OAAC;gBAAE,WAAU;0BAA4C;;;;;;;;;;;;AAG/D","debugId":null}}]
+}

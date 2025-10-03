@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 27, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Next%20Level%20Programming/M7/A7_Client/next-portfolio-frontend/src/app/%28public%29/about/page.tsx"],"sourcesContent":["const AboutPage = () => {\n  return (\n    <div className=\"py-30 px-4 max-w-7xl mx-auto\">\n      <h1 className=\"text-4xl font-semibold text-gray-700 text-center\">\n        💤 The developer is sleeping now. Check back later!\n      </h1>\n    </div>\n  );\n};\n\nexport default AboutPage;\n"],"names":[],"mappings":";;;;;;AAAA,MAAM,YAAY;IAChB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAG,WAAU;sBAAmD;;;;;;;;;;;AAKvE;uCAEe","debugId":null}}]
+}

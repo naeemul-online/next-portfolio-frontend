@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/Next%20Level%20Programming/M7/A7_Client/next-portfolio-frontend/src/providers/AuthProvider.tsx"],"sourcesContent":["\"use client\";\n\nimport { SessionProvider } from \"next-auth/react\";\n\nconst AuthProvider = ({ children }: { children: React.ReactNode }) => {\n  return <SessionProvider>{children}</SessionProvider>;\n};\n\nexport default AuthProvider;\n"],"names":[],"mappings":";;;;;AAEA;AAFA;;;AAIA,MAAM,eAAe;QAAC,EAAE,QAAQ,EAAiC;IAC/D,qBAAO,6LAAC,oKAAe;kBAAE;;;;;;AAC3B;KAFM;uCAIS","debugId":null}}]
+}
