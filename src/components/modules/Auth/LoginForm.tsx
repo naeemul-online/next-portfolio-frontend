@@ -47,7 +47,7 @@ export default function LoginPage() {
       // }
       signIn("credentials", {
         ...data,
-        callbackUrl: "/about",
+        callbackUrl: "/dashboard",
       });
     } catch (error) {
       console.error(error);

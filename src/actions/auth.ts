@@ -25,7 +25,6 @@ export const login = async (data: LoginSchemaType) => {
     credentials: "include",
     body: JSON.stringify(data),
   });
-  console.log(res);
 
   const responseData = await res.json();
 

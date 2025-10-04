@@ -1,4 +1,5 @@
-import Sidebar from "@/components/shared/Sidebar";
+import { DashboardHeader } from "@/components/modules/dashboard/dashboard-header";
+import { DashboardSidebar } from "@/components/modules/dashboard/dashboard-sidebar";
 
 export default function DashboardLayout({
   children,
@@ -6,9 +7,12 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="min-h-dvh flex gap-4">
-      <Sidebar />
-      {children}
-    </main>
+    <div className="flex min-h-screen flex-col">
+      <DashboardHeader />
+      <div className="flex flex-1">
+        <DashboardSidebar />
+        <main className="flex-1 p-6 lg:p-8">{children}</main>
+      </div>
+    </div>
   );
 }

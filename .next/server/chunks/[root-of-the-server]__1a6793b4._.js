@@ -122,7 +122,7 @@ const authOptions = {
             return session;
         }
     },
-    // secret: process.env.AUTH_SECRET,
+    secret: process.env.AUTH_SECRET,
     pages: {
         signIn: "/login"
     }

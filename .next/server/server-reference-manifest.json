@@ -1,5 +1,21 @@
 {
-  "node": {},
+  "node": {
+    "7fc925e37c2b519145fb62dfc77d354a1b65fd10ce": {
+      "workers": {
+        "app/(dashboard)/dashboard/create-blog/page": {
+          "moduleId": "[project]/.next-internal/server/app/(dashboard)/dashboard/create-blog/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/create.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "create",
+          "filename": "src/actions/create.ts"
+        }
+      },
+      "layer": {
+        "app/(dashboard)/dashboard/create-blog/page": "action-browser"
+      },
+      "filename": "src/actions/create.ts",
+      "exportedName": "create"
+    }
+  },
   "edge": {},
   "encryptionKey": "HAC6CqRsk62J58QrqN+RE8U2fQJjfqSJVoYn5UeJ4no="
 }

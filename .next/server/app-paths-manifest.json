@@ -1,7 +1,11 @@
 {
+  "/(dashboard)/dashboard/create-blog/page": "app/(dashboard)/dashboard/create-blog/page.js",
+  "/(dashboard)/dashboard/page": "app/(dashboard)/dashboard/page.js",
   "/(public)/(auth)/login/page": "app/(public)/(auth)/login/page.js",
   "/(public)/about/page": "app/(public)/about/page.js",
+  "/(public)/blogs/page": "app/(public)/blogs/page.js",
   "/(public)/page": "app/(public)/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }

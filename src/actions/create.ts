@@ -14,10 +14,14 @@ export const create = async (data: FormData) => {
       .split(",")
       .map((tag) => tag.trim()),
     authorId: session?.user?.id,
-    isFeatured: Boolean(blogInfo.isFeatured),
+    featured: Boolean(blogInfo.isFeatured),
   };
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/post`, {
+  if (session?.user?.role !== "ADMIN") {
+    return null;
+  }
+
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/blog`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

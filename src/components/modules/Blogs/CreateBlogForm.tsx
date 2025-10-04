@@ -5,7 +5,7 @@ import Form from "next/form";
 import { useState } from "react";
 
 export default function CreateBlogForm() {
-  const [isFeatured, setIsFeatured] = useState("false");
+  const [featured, setFeatured] = useState("false");
 
   return (
     <Form
@@ -74,10 +74,10 @@ export default function CreateBlogForm() {
           <label className="flex items-center gap-2">
             <input
               type="radio"
-              name="isFeatured"
+              name="featured"
               value="true"
-              checked={isFeatured === "true"}
-              onChange={(e) => setIsFeatured(e.target.value)}
+              checked={featured === "true"}
+              onChange={(e) => setFeatured(e.target.value)}
               className="text-blue-600 focus:ring-blue-500"
             />
             Yes
@@ -85,10 +85,10 @@ export default function CreateBlogForm() {
           <label className="flex items-center gap-2">
             <input
               type="radio"
-              name="isFeatured"
+              name="featured"
               value="false"
-              checked={isFeatured === "false"}
-              onChange={(e) => setIsFeatured(e.target.value)}
+              checked={featured === "false"}
+              onChange={(e) => setFeatured(e.target.value)}
               className="text-blue-600 focus:ring-blue-500"
             />
             No
