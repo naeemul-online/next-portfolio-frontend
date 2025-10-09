@@ -47,10 +47,37 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 }
 
 
-// Validate ../../src/app/(dashboard)/dashboard/create-blog/page.tsx
+// Validate ../../src/app/(dashboard)/dashboard/about/page.tsx
 {
-  type __IsExpected<Specific extends AppPageConfig<"/dashboard/create-blog">> = Specific
-  const handler = {} as typeof import("../../src/app/(dashboard)/dashboard/create-blog/page.js")
+  type __IsExpected<Specific extends AppPageConfig<"/dashboard/about">> = Specific
+  const handler = {} as typeof import("../../src/app/(dashboard)/dashboard/about/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/(dashboard)/dashboard/blogs/[id]/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/dashboard/blogs/[id]">> = Specific
+  const handler = {} as typeof import("../../src/app/(dashboard)/dashboard/blogs/[id]/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/(dashboard)/dashboard/blogs/new/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/dashboard/blogs/new">> = Specific
+  const handler = {} as typeof import("../../src/app/(dashboard)/dashboard/blogs/new/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/(dashboard)/dashboard/blogs/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/dashboard/blogs">> = Specific
+  const handler = {} as typeof import("../../src/app/(dashboard)/dashboard/blogs/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
@@ -65,37 +92,37 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
-// Validate ../../src/app/(public)/(auth)/login/page.tsx
+// Validate ../../src/app/(dashboard)/dashboard/projects/page.tsx
 {
-  type __IsExpected<Specific extends AppPageConfig<"/login">> = Specific
-  const handler = {} as typeof import("../../src/app/(public)/(auth)/login/page.js")
+  type __IsExpected<Specific extends AppPageConfig<"/dashboard/projects">> = Specific
+  const handler = {} as typeof import("../../src/app/(dashboard)/dashboard/projects/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
 }
 
-// Validate ../../src/app/(public)/(auth)/register/page.tsx
+// Validate ../../src/app/(public)/auth/login/page.tsx
 {
-  type __IsExpected<Specific extends AppPageConfig<"/register">> = Specific
-  const handler = {} as typeof import("../../src/app/(public)/(auth)/register/page.js")
+  type __IsExpected<Specific extends AppPageConfig<"/auth/login">> = Specific
+  const handler = {} as typeof import("../../src/app/(public)/auth/login/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
 }
 
-// Validate ../../src/app/(public)/about/page.tsx
+// Validate ../../src/app/(public)/auth/register/page.tsx
 {
-  type __IsExpected<Specific extends AppPageConfig<"/about">> = Specific
-  const handler = {} as typeof import("../../src/app/(public)/about/page.js")
+  type __IsExpected<Specific extends AppPageConfig<"/auth/register">> = Specific
+  const handler = {} as typeof import("../../src/app/(public)/auth/register/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
 }
 
-// Validate ../../src/app/(public)/blogs/[blogId]/page.tsx
+// Validate ../../src/app/(public)/blogs/[id]/page.tsx
 {
-  type __IsExpected<Specific extends AppPageConfig<"/blogs/[blogId]">> = Specific
-  const handler = {} as typeof import("../../src/app/(public)/blogs/[blogId]/page.js")
+  type __IsExpected<Specific extends AppPageConfig<"/blogs/[id]">> = Specific
+  const handler = {} as typeof import("../../src/app/(public)/blogs/[id]/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check

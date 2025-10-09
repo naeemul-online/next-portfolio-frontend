@@ -46,15 +46,13 @@ __turbopack_context__.s([
     ()=>authOptions
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$providers$2f$credentials$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-auth/providers/credentials.js [app-route] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$providers$2f$google$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-auth/providers/google.js [app-route] (ecmascript)");
-;
 ;
 const authOptions = {
     providers: [
-        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$providers$2f$google$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"])({
-            clientId: process.env.GOOGLE_CLIENT_ID,
-            clientSecret: process.env.GOOGLE_CLIENT_SECRET
-        }),
+        // GoogleProvider({
+        //   clientId: process.env.GOOGLE_CLIENT_ID as string,
+        //   clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
+        // }),
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$providers$2f$credentials$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"])({
             name: "Credentials",
             credentials: {
@@ -73,7 +71,7 @@ const authOptions = {
                     return null;
                 }
                 try {
-                    const res = await fetch(`${("TURBOPACK compile-time value", "https://next-portfolio-backend-tau.vercel.app/api/v1")}/auth/login`, {
+                    const res = await fetch(`${("TURBOPACK compile-time value", "http://localhost:5001/api/v1")}/auth/login`, {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json"
@@ -122,9 +120,9 @@ const authOptions = {
             return session;
         }
     },
-    secret: process.env.AUTH_SECRET,
+    secret: process.env.NEXTAUTH_SECRET,
     pages: {
-        signIn: "/login"
+        signIn: "/auth/login"
     }
 };
 }),

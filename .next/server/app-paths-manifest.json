@@ -1,11 +1,13 @@
 {
-  "/(dashboard)/dashboard/create-blog/page": "app/(dashboard)/dashboard/create-blog/page.js",
+  "/(dashboard)/dashboard/about/page": "app/(dashboard)/dashboard/about/page.js",
+  "/(dashboard)/dashboard/blogs/[id]/page": "app/(dashboard)/dashboard/blogs/[id]/page.js",
+  "/(dashboard)/dashboard/blogs/new/page": "app/(dashboard)/dashboard/blogs/new/page.js",
+  "/(dashboard)/dashboard/blogs/page": "app/(dashboard)/dashboard/blogs/page.js",
   "/(dashboard)/dashboard/page": "app/(dashboard)/dashboard/page.js",
-  "/(public)/(auth)/login/page": "app/(public)/(auth)/login/page.js",
-  "/(public)/about/page": "app/(public)/about/page.js",
+  "/(dashboard)/dashboard/projects/page": "app/(dashboard)/dashboard/projects/page.js",
+  "/(public)/auth/login/page": "app/(public)/auth/login/page.js",
+  "/(public)/blogs/[id]/page": "app/(public)/blogs/[id]/page.js",
   "/(public)/blogs/page": "app/(public)/blogs/page.js",
   "/(public)/page": "app/(public)/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
 }
