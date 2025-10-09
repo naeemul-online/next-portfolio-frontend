@@ -1,4 +1,6 @@
 import AuthProvider from "@/providers/AuthProvider";
+
+import Providers from "@/providers/Providers";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "sonner";
@@ -15,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next Blog",
+  title: "Portfolio - Naeemul Islam",
   description: "A simple blog built with Next.js, Tailwind CSS, and shadcn/ui.",
 };
 
@@ -27,11 +29,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        id="root"
       >
         <AuthProvider>
-          <Toaster richColors position="top-center" />
-          {children}
+          <Providers>
+            <Toaster richColors position="top-center" />
+            {children}
+          </Providers>
         </AuthProvider>
       </body>
     </html>

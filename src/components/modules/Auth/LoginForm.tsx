@@ -8,7 +8,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Lock, Mail } from "lucide-react";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 import { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -24,7 +23,6 @@ type LoginFormData = z.infer<typeof loginSchema>;
 
 export default function LoginPage() {
   const [isLoading, setIsLoading] = useState(false);
-  const router = useRouter();
 
   const {
     register,
@@ -33,8 +31,8 @@ export default function LoginPage() {
   } = useForm<LoginFormData>({
     resolver: zodResolver(loginSchema),
     defaultValues: {
-      email: "naeem@portfolio.com",
-      password: "Admin@1234",
+      email: "",
+      password: "",
     },
   });
 
@@ -47,8 +45,10 @@ export default function LoginPage() {
       // }
       signIn("credentials", {
         ...data,
+        redirect: true,
         callbackUrl: "/dashboard",
       });
+      toast.success("Logged in successfully!");
     } catch (error) {
       console.error(error);
       toast.error("Logged in failed!");
